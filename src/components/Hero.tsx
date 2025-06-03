@@ -97,16 +97,7 @@ const Hero: React.FC = () => {
               </Button>
             </div>
 
-            <div className="mt-12 flex justify-center md:justify-start items-center gap-6">
-              <div className="text-center bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-                <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#4a54c7] to-[#6a4bc7] font-marilde text-3xl mb-1">3+</div>
-                <div className="text-white/60 text-sm">Anos de<br />experiência</div>
-              </div>
-              <div className="text-center bg-white/5 backdrop-blur-sm p-4 rounded-xl border border-white/10">
-                <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#4a54c7] to-[#6a4bc7] font-marilde text-3xl mb-1">50+</div>
-                <div className="text-white/60 text-sm">Clientes<br />satisfeitos</div>
-              </div>
-            </div>
+            
           </div>
           
           <div 
@@ -119,7 +110,7 @@ const Hero: React.FC = () => {
               
               <div className="relative">
                 <img 
-                  src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                  src="images/Editadas/PSX_20250325_205915.jpg" 
                   alt="Pessoa sorrindo enquanto usa o celular" 
                   className="w-full h-[400px] md:h-[500px] object-cover rounded-xl shadow-2xl group-hover:scale-[1.02] transition-transform duration-500"
                 />

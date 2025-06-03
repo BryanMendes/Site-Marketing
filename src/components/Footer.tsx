@@ -71,23 +71,17 @@ const Footer: React.FC = () => {
   const socialLinks = [
     { 
       icon: Instagram, 
-      href: 'https://instagram.com/carolmarketing', 
+      href: 'https://www.instagram.com/carol.media/', 
       color: 'text-pink-400',
       label: 'Instagram'
     },
-    { 
-      icon: Mail, 
-      href: 'mailto:sparkware2025@gmail.com', 
-      color: 'text-blue-400',
-      label: 'Email'
-    }
+    
   ];
   
   const footerLinks = [
     { title: 'Home', href: '#home' },
     { title: 'Sobre', href: '#sobre' },
     { title: 'Serviços', href: '#serviços' },
-    { title: 'Depoimentos', href: '#depoimentos' },
     { title: 'Contato', href: '#contato' }
   ];
   
@@ -186,7 +180,7 @@ const Footer: React.FC = () => {
               
               <div className="p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 group">
                 <a 
-                  href="https://wa.me/5511999999999" 
+                  href="https://wa.me/5534991806595" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-3"
@@ -219,7 +213,7 @@ const Footer: React.FC = () => {
             <Heart className="h-3 w-3 text-red-400 animate-pulse" />
             <span>por</span>
             <a 
-              href="https://sparkware.com.br" 
+              href="https://www.instagram.com/sparkware_techh/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-[#4a54c7] hover:text-white transition-colors duration-300"

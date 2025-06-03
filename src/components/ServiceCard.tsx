@@ -87,13 +87,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           </div>
         )}
         
-        <div className={`mb-4 md:mb-5 bg-[#F8F9FA] rounded-xl p-3 md:p-4 border transition-all duration-300 group-hover:shadow-sm ${popular ? 'border-[#4a54c7]/20' : 'border-gray-100'} group-hover:border-[#4a54c7]/20`}>
-          <div className="flex items-end gap-1.5">
-            <div className={`font-marilde text-xl md:text-2xl lg:text-3xl ${popular ? 'text-[#4a54c7]' : 'text-[#252361]'}`}>{price}</div>
-            <div className="text-[#1a1a1a]/60 text-xs pb-1">/mês</div>
-          </div>
-          <div className="text-[#1a1a1a]/60 text-xs mt-0.5 md:mt-1">Cancelamento flexível</div>
-        </div>
+        
         
         <Button 
           variant={popular ? "primary" : "outline"} 

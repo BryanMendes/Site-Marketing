@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 1706.6667 1066.6667"
+   height="1066.6667"
+   width="1706.6667"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><clipPath
+       id="clipPath20"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path18"
+         d="M 0,800 H 1280 V 0 H 0 Z" /></clipPath></defs><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,1066.6667)"
+     id="g10"><path
+       id="path12"
+       style="fill:#25236f;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       d="M 0,0 H 1280 V 800 H 0 Z" /><g
+       id="g14"><g
+         clip-path="url(#clipPath20)"
+         id="g16"><g
+           transform="translate(781.6435,445.5671)"
+           id="g22"><path
+             id="path24"
+             style="fill:#eee7e9;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 0,0 c -16.803,1.721 -33.918,0.157 -50.167,-4.432 -25.91,-7.319 -49.714,-21.605 -63.79,-45.009 -6.664,-11.081 -11.267,-23.303 -15.083,-35.614 -2.369,-7.641 -4.411,-15.38 -6.304,-23.151 -1.619,-6.648 -7.215,-19.539 -5.84,-26.141 -21.617,103.77 -39.142,121.295 -142.912,142.912 103.77,21.617 121.295,39.141 142.912,142.912 -1.382,-6.636 4.244,-19.594 5.873,-26.276 1.902,-7.804 3.957,-15.576 6.342,-23.247 3.841,-12.351 8.479,-24.611 15.207,-35.706 13.044,-21.513 36.673,-38.747 61.339,-43.859 17.697,-3.668 36.438,-1.739 53.489,3.971 12.166,4.074 23.575,9.837 34.514,16.516 -16.31,84.519 -91.714,147.987 -181.519,145.672 -96.651,-2.492 -174.6,-81.999 -175.285,-178.679 -0.708,-100.034 80.17,-181.348 180.04,-181.348 93.262,0 169.961,70.91 179.125,161.757 C 25.85,-4.667 13.039,-1.335 0,0" /></g></g></g><text
+       id="text28"
+       style="font-variant:normal;font-weight:300;font-stretch:normal;font-size:65.67379761px;font-family:'Marlide Display Light';-inkscape-font-specification:MarlideDisplay-Light;writing-mode:lr-tb;fill:#eee7e9;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1,0,0,-1,475.4224,182.2422)"><tspan
+         id="tspan26"
+         y="0"
+         x="0 51.094215 76.378632 104.48701 124.91157 154.07074 168.71599 181.39104 228.74185 255.60243 286.07507 299.93225">@carol.media</tspan></text>
+</g></svg>

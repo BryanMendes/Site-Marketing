@@ -196,7 +196,7 @@ const About: React.FC = () => {
               >
                 {/* Main image */}
                 <img 
-                  src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                  src="images/Editadas/PSX_20250325_205945.jpg" 
                   alt="Escritório moderno com computadores" 
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />
@@ -216,23 +216,7 @@ const About: React.FC = () => {
               </div>
               
               {/* Floating stats cards */}
-              <div className="flex gap-4 -mt-20 px-4 relative z-10">
-                {stats.map((stat, index) => (
-                  <div 
-                    key={index} 
-                    className={`flex-1 bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 transform ${
-                      isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                    }`}
-                    style={{ transitionDelay: `${900 + (index * 100)}ms` }}
-                  >
-                    <div className={`w-10 h-10 rounded-lg ${stat.color} flex items-center justify-center mb-3 shadow-lg`}>
-                      <stat.icon className="w-5 h-5 text-white" />
-                    </div>
-                    <div className="font-marilde text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#4a54c7] to-[#6a4bc7]">{stat.value}</div>
-                    <div className="text-[#1a1a1a]/60 text-sm">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
+              
             </div>
           </div>
         </div>

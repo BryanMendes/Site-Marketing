@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { PhoneCall, Instagram, Mail, MessageCircle, ExternalLink, Sparkles, ArrowRight, Globe } from 'lucide-react';
+import { PhoneCall, Instagram, MessageCircle, ExternalLink, Sparkles, ArrowRight } from 'lucide-react';
 import Button from './Button';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
       icon: PhoneCall,
       title: 'WhatsApp',
       content: 'Atendimento rápido e personalizado',
-      link: 'https://wa.me/5511999999999',
+      link: 'https://wa.me/5534991806595',
       color: 'bg-green-500/20',
       iconColor: 'text-green-500'
     },
@@ -119,25 +119,9 @@ const Contact: React.FC = () => {
       icon: Instagram,
       title: 'Instagram',
       content: 'Siga-nos e veja nosso trabalho em tempo real',
-      link: 'https://instagram.com/carolmarketing',
+      link: 'https://www.instagram.com/carol.media/',
       color: 'bg-purple-500/20',
       iconColor: 'text-purple-500'
-    },
-    {
-      icon: Mail,
-      title: 'Email',
-      content: 'Para propostas e parcerias comerciais',
-      link: 'mailto:sparkware2025@gmail.com',
-      color: 'bg-blue-500/20',
-      iconColor: 'text-blue-500'
-    },
-    {
-      icon: MessageCircle,
-      title: 'Chat Online',
-      content: 'Converse agora mesmo com nossa equipe',
-      link: '#chat',
-      color: 'bg-orange-500/20',
-      iconColor: 'text-orange-500'
     }
   ];
 
@@ -165,6 +149,7 @@ const Contact: React.FC = () => {
         className="absolute inset-0 bg-gradient-to-br from-[#4a54c7]/5 via-transparent to-[#6a4bc7]/5" 
         style={{
           transform: `translate(${mousePosition.x * 20}px, ${mousePosition.y * 20}px)`,
+          
           transition: 'transform 0.3s ease-out'
         }}
       ></div>
@@ -192,7 +177,7 @@ const Contact: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {contactInfo.map((item, index) => (
             <ContactCard
               key={index}
@@ -201,40 +186,6 @@ const Contact: React.FC = () => {
               isVisible={isVisible}
             />
           ))}
-        </div>
-        
-        <div 
-          className={`mt-20 text-center max-w-3xl mx-auto transition-all duration-1000 delay-500 transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-          }`}
-        >
-          <div className="bg-white/80 backdrop-blur-md rounded-2xl p-8 shadow-lg border border-[#4a54c7]/10 relative overflow-hidden group">
-            {/* Background shine effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-100 blur-md group-hover:animate-shine"></div>
-            
-            <div className="relative z-10">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#4a54c7] to-[#6a4bc7] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-[#4a54c7]/20">
-                <Globe className="w-8 h-8 text-white" />
-              </div>
-              
-              <h3 className="font-marilde text-2xl text-[#252361] mb-4">
-                Agendamento prioritário
-              </h3>
-              
-              <p className="text-[#1a1a1a]/70 mb-8 max-w-lg mx-auto">
-                Quer uma análise gratuita do seu Instagram? Agende uma conversa rápida de 15 minutos com Carol Lemos e descubra oportunidades para crescer.
-              </p>
-              
-              <Button
-                onClick={() => window.open('https://calendly.com/yourusername', '_blank')}
-                size="lg"
-                className="px-8 mx-auto"
-                icon={<ArrowRight className="w-5 h-5" />}
-              >
-                Agendar consulta gratuita
-              </Button>
-            </div>
-          </div>
         </div>
       </div>
     </section>

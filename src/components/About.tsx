@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
-import { TrendingUp, Users, Award, Sparkles, CheckCircle2, Globe, Target } from 'lucide-react';
+import { CheckCircle2, Globe, Target } from 'lucide-react';
 
 const FeatureCard: React.FC<{icon: React.ElementType, title: string, description: string, delay: number, isVisible: boolean}> = ({ 
   icon: Icon, 
@@ -46,27 +46,6 @@ const About: React.FC = () => {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
-
-  const stats = [
-    {
-      icon: TrendingUp,
-      value: '3+',
-      label: 'Anos de experiência',
-      color: 'bg-gradient-to-br from-blue-500 to-blue-600',
-    },
-    {
-      icon: Users,
-      value: '50+',
-      label: 'Clientes satisfeitos',
-      color: 'bg-gradient-to-br from-purple-500 to-purple-600',
-    },
-    {
-      icon: Award,
-      value: '300%',
-      label: 'Média de crescimento',
-      color: 'bg-gradient-to-br from-emerald-500 to-emerald-600',
-    },
-  ];
 
   const features = [
     {
@@ -120,7 +99,6 @@ const About: React.FC = () => {
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
-            <Sparkles className="w-4 h-4" />
             <span className="font-poppins text-sm">Sobre Nós</span>
           </div>
           
@@ -196,8 +174,8 @@ const About: React.FC = () => {
               >
                 {/* Main image */}
                 <img 
-                  src="images/Editadas/PSX_20250325_205945.jpg" 
-                  alt="Escritório moderno com computadores" 
+                  src="/src/assets/PSX_20250325_210252.jpg" 
+                  alt="Carol Lemos" 
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />
                 
@@ -214,9 +192,6 @@ const About: React.FC = () => {
                   style={{ transform: 'translateZ(20px)' }}
                 ></div>
               </div>
-              
-              {/* Floating stats cards */}
-              
             </div>
           </div>
         </div>

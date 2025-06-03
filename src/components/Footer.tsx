@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Instagram, Mail, Heart, ArrowUp, Star, Sparkles, ExternalLink } from 'lucide-react';
+import { Instagram, Heart, ArrowUp, Star, Sparkles } from 'lucide-react';
 
 const SocialIcon: React.FC<{icon: React.ElementType, href: string, color: string, label: string}> = ({
   icon: Icon,
@@ -74,8 +74,7 @@ const Footer: React.FC = () => {
       href: 'https://www.instagram.com/carol.media/', 
       color: 'text-pink-400',
       label: 'Instagram'
-    },
-    
+    }
   ];
   
   const footerLinks = [
@@ -109,16 +108,15 @@ const Footer: React.FC = () => {
       
       {/* Footer content */}
       <div className="relative z-10 py-16 container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           {/* Logo and description */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <div className="relative h-12 w-12 mr-3">
-                <div className="absolute inset-0 bg-gradient-to-r from-[#4a54c7] to-[#6a4bc7] rounded-xl opacity-80 blur-sm"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Instagram className="h-6 w-6 text-white" />
-                </div>
-              </div>
+              <img 
+                src="/Design-sem-nome.svg" 
+                alt="Carol Lemos Logo" 
+                className="h-12 w-auto mr-3"
+              />
               <div>
                 <h3 className="font-marilde text-2xl text-white">Carol Lemos</h3>
                 <p className="text-sm text-white/60">Assessoria & Social Media</p>
@@ -155,46 +153,6 @@ const Footer: React.FC = () => {
                   {link.title}
                 </a>
               ))}
-            </div>
-          </div>
-          
-          {/* Contact and achievements */}
-          <div className="space-y-6">
-            <h3 className="text-white text-lg font-medium mb-4 flex items-center gap-2">
-              <span className="w-8 h-0.5 bg-gradient-to-r from-[#4a54c7] to-[#6a4bc7]"></span>
-              Atendimento
-            </h3>
-            
-            <div className="space-y-4">
-              <div className="p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 group">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#4a54c7] to-[#6a4bc7] flex items-center justify-center">
-                    <Star className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white/90 font-medium">Horário de atendimento</p>
-                    <p className="text-white/60 text-sm">Segunda à Sexta, 9h–18h</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all duration-300 group">
-                <a 
-                  href="https://wa.me/5534991806595" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3"
-                >
-                  <div className="w-10 h-10 rounded-full bg-green-500/30 flex items-center justify-center">
-                    <Instagram className="w-5 h-5 text-green-500" />
-                  </div>
-                  <div className="flex-grow">
-                    <p className="text-white/90 font-medium">Fale por WhatsApp</p>
-                    <p className="text-white/60 text-sm">Atendimento rápido</p>
-                  </div>
-                  <ExternalLink className="w-4 h-4 text-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </a>
-              </div>
             </div>
           </div>
         </div>

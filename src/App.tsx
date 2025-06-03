@@ -20,8 +20,7 @@ function App() {
       <Services />
       <Contact />
       <Footer />
-      {/* Substitua o número abaixo pelo seu número de WhatsApp com código do país + DDD. Ex: 5511999999999 */}
-      <WhatsAppButton phoneNumber="5511912345678" message="Olá! Gostaria de mais informações sobre seus serviços de Instagram!" />
+      <WhatsAppButton phoneNumber="5534991806595" message="Olá! Gostaria de mais informações sobre seus serviços de Instagram!" />
     </div>
   );
 }

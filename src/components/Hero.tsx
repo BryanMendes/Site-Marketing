@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Button from './Button';
-import { Instagram, Star, ArrowRight, MousePointer } from 'lucide-react';
+import { ArrowRight, MousePointer } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,11 +63,6 @@ const Hero: React.FC = () => {
               isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
             }`}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md text-[#eee7e9] mb-6 border border-white/20">
-              <Instagram className="w-4 h-4" />
-              <span className="font-poppins text-sm">Marketing Digital & Instagram</span>
-            </div>
-            
             <h1 className="font-marilde text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
               Transforme seu{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4a54c7] to-[#6a4bc7]">Instagram</span>{' '}
@@ -96,8 +91,6 @@ const Hero: React.FC = () => {
                 Nossos serviços
               </Button>
             </div>
-
-            
           </div>
           
           <div 
@@ -110,21 +103,11 @@ const Hero: React.FC = () => {
               
               <div className="relative">
                 <img 
-                  src="images/Editadas/PSX_20250325_205915.jpg" 
-                  alt="Pessoa sorrindo enquanto usa o celular" 
+                  src="/src/assets/PSX_20250325_205945.jpg" 
+                  alt="Carol Lemos" 
                   className="w-full h-[400px] md:h-[500px] object-cover rounded-xl shadow-2xl group-hover:scale-[1.02] transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#252361]/50 to-transparent rounded-xl"></div>
-              </div>
-              
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-lg p-4 shadow-xl transform group-hover:translate-y-[-8px] transition-transform duration-500">
-                <div className="flex items-center gap-2">
-                  <Star className="w-5 h-5 text-[#4a54c7]" />
-                  <div>
-                    <div className="text-[#252361] font-marilde text-xl">+300%</div>
-                    <div className="text-[#1a1a1a]/60 text-sm">Crescimento médio</div>
-                  </div>
-                </div>
               </div>
 
               <div className="absolute top-4 left-4 bg-white/10 backdrop-blur-md rounded-lg p-3 shadow-lg border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">

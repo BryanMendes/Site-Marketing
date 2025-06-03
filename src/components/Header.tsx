@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Instagram, Menu, X, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight } from 'lucide-react';
 import Button from './Button';
 
 const Header: React.FC = () => {
@@ -11,7 +11,6 @@ const Header: React.FC = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
-      // Update active section based on scroll position
       const sections = ['home', 'sobre', 'serviços', 'contato'];
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
@@ -35,7 +34,6 @@ const Header: React.FC = () => {
     { name: 'Home', link: 'home' },
     { name: 'Sobre', link: 'sobre' },
     { name: 'Serviços', link: 'serviços' },
-    { name: 'Depoimentos', link: 'depoimentos' },
     { name: 'Contato', link: 'contato' }
   ];
 
@@ -50,10 +48,11 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center group cursor-pointer">
-            <div className="relative">
-              <div className="absolute -inset-2 bg-gradient-to-r from-[#4a54c7] to-[#6a4bc7] rounded-full opacity-75 blur-sm transition-all duration-300 group-hover:opacity-100 group-hover:blur-md"></div>
-              <Instagram className="relative z-10 mr-2 text-white transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12" size={28} />
-            </div>
+            <img 
+              src="/Design-sem-nome.svg" 
+              alt="Carol Lemos Logo" 
+              className="h-12 w-auto mr-2"
+            />
             <div className="relative z-10">
               <span className="font-marilde text-2xl text-white">Carol Lemos</span>
               <span className="block text-xs text-white/80 font-poppins">Assessoria & Social Media</span>
@@ -154,10 +153,6 @@ const Header: React.FC = () => {
             >
               Entre em contato
             </Button>
-            
-            <div className="flex justify-center mt-8">
-              <Instagram className="w-6 h-6 text-white/70 hover:text-white transition-colors duration-300 cursor-pointer" />
-            </div>
             
             <p className="text-white/50 text-xs text-center mt-8">
               Carol Lemos © {new Date().getFullYear()}

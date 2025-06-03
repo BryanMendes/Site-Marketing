@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { TrendingUp, Layout, BarChart, MessageCircle } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import backgroundImage from '../assets/PSX_20250325_205945.jpg'; // Import the image
 
 const Services: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -116,7 +117,11 @@ const Services: React.FC = () => {
     <section id="serviços" className="py-20 bg-gradient-to-b from-[#252361] to-[#2a2a6a] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute h-full w-full bg-[url('https://images.pexels.com/photos/3653849/pexels-photo-3653849.jpeg?auto=compress&cs=tinysrgb&w=1600')] bg-cover bg-center bg-fixed"></div>
+        {/* Use the imported image here */}
+        <div 
+          className="absolute h-full w-full bg-cover bg-center bg-fixed" 
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        ></div>
       </div>
       
       <div className="container mx-auto px-4 md:px-8 relative z-10" ref={ref}>

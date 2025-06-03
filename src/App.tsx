@@ -9,7 +9,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   useEffect(() => {
-    document.title = "Carol Lemos • Assessoria & Social Media";
+    document.title = "Carol Lemos";
   }, []);
 
   return (

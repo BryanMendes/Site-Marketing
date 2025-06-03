@@ -113,7 +113,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6">
             <div className="flex items-center">
               <img 
-                src="/Design-sem-nome.svg" 
+                src="/identidade-visual-carolmedia2.png" 
                 alt="Carol Lemos Logo" 
                 className="h-12 w-auto mr-3"
               />

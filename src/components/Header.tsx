@@ -49,7 +49,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center group cursor-pointer">
             <img 
-              src="/Design-sem-nome.svg" 
+              src="/identidade visual - carolmedia3.png" 
               alt="Carol Lemos Logo" 
               className="h-12 w-auto mr-2"
             />
